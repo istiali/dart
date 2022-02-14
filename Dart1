@@ -1,0 +1,83 @@
+void main() {
+  printfactors(100);
+}
+
+void printfactors(int n)
+{
+  int num = n;
+  for(int i=0;i<=num;i++)
+  {
+    if(num % i == 0)
+      print(i);
+  }
+  
+}
+
+-------------------------------------------------------------------------------------
+
+void main() {
+  
+  ob.printing();
+}
+
+class libraryy
+{
+  int book_id = 1;
+  int book_qty = 2;
+  String book_name = "Harry Potter";
+  
+  void bookdetails(){
+    print("Book ID: ${ob.book_id}");
+    print("Book Quantity: ${ob.book_qty}");
+    print("Book Name: ${ob.book_name}");
+  }
+  
+}
+
+libraryy ob = libraryy();
+
+-------------------------------------------------------------------------------
+
+void main() {
+  
+
+  
+  libraryy ob = libraryy();
+  libraryy ob1 = libraryy();
+  libraryy ob2 = libraryy();
+  
+  List books = [ob,ob1,ob2];
+  print(books[0].bookdetails(1,2,"EM","Engg"));
+  
+  ob.bookdetails(1,2,"EM","Engg");
+  ob1.bookdetails(2,4,"DSA","Engg");
+  ob2.bookdetails(3,5,"DBMS","Engg");
+  
+}
+
+class libraryy
+{
+  int book_id = 0;
+  int book_qty = 0;
+  String book_name = "";
+  String bookcategory = '';
+
+  
+  void bookdetails(int id, int qty, String name, String categ){
+    
+    this.book_id = id;
+    this.book_qty = qty;
+    this.book_name = name;
+    this.bookcategory = categ;
+    
+    print("Book ID: ${this.book_id}");
+    print("Book Quantity: ${this.book_qty}");
+    print("Book Name: ${this.book_name}");
+    print("Book Category: ${this.bookcategory} \n");
+  }
+  
+}
+
+
+
+
